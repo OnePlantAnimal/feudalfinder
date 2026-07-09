@@ -56,6 +56,8 @@ cents%1200         ratio    (a+bφ)/(x+yφ)    entropy
 
 ... (and so on)
 
+Alternatively, simply run feudalfinder.py.
+
 
 ## References
 
