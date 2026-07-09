@@ -102,6 +102,9 @@ def find_feudal(
                 for x in _centered_range(radius):
                     for y in _centered_range(radius):
 
+                        if max(abs(a), abs(b), abs(x), abs(y)) < radius: # skip combos already fully covered by a smaller radius
+                            continue
+
                         if (abs(a*y - b*x) != 1) and not(b == 0 and y == 0): #discard intervals which are neither just nor merciful
                             continue
 

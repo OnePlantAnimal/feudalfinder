@@ -30,7 +30,7 @@ from feudalfinder import find_feudal, print_intervals
 intervals = find_feudal(
     bound=7, #max value of |a|,|b|,|x|,|y|
     sort_by="cents", #"cents" (by cents), "ratio", or "entropy".
-    discard_just = False, #discards just intervals
+    discard_just = True, #discards just intervals
     discard_merciful = False, #discards merciful intervals
     max_value = 200, #max value of numerator/denominator for harmonic entropy calculation
     gaussian_deviation = 17, #gaussian blur standard deviation for harmonic entropy calculation
