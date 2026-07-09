@@ -1,0 +1,13 @@
+[project]
+name = "feudalfinder"
+version = "0.1.0"
+description = "Search and rank feudal intervals in golden ratio tuning"
+authors = [
+    {name="Eli Rosenkim"}
+]
+readme = "README.md"
+license = {file="LICENSE"}
+
+dependencies = [
+    "numpy"
+]

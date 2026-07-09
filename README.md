@@ -7,7 +7,7 @@ $$
 $$
 
 where either 
-$(a*y) - (b*x) = \pm 1$ (we call intervals that satisfy this property *merciful*), or $b = y = 0$ (we call intervals that satisfy this property *just*), and $\phi = \frac{1+\sqrt{5}}{2}$ is the golden ratio.
+$ay - bx = \pm 1$ (we call intervals that satisfy this property *merciful*), or $b = y = 0$ (we call intervals that satisfy this property *just*), and $\phi = \frac{1+\sqrt{5}}{2}$ is the golden ratio.
 
 The script searches intervals is order of radius, i.e. $|a|,|b|,|x|,|y| < 1$, then $< 2$, $< 3$ and so on.
 All subsequently found octave equivalents and sub unison intervals are discarded.
@@ -42,14 +42,23 @@ print_intervals(intervals)
 ```
 
 which should print something like:
+
 cents%1200         ratio    (a+bφ)/(x+yφ)    entropy
+
          0             1    1      /1        0.129036
+
    128.831       8.61803    6-7φ   /1-1φ     2.69597
+
    157.894       4.38197    1-5φ   /0+1φ     2.5713
+
    177.973       2.21654    5-7φ   /2-3φ     2.40088
+
    213.528       1.13127    6-7φ   /5-6φ     2.34096
+
      224.1       2.27639    3-5φ   /1-2φ     2.21142
+
    243.619        1.1511    5-6φ   /4-5φ     2.30806
+
 ... (and so on)
 
 
